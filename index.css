@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0a192f;
+  --navy-light: #112240;
+  --slate: #8892b0;
+  --slate-light: #a8b2d1;
+  --slate-lightest: #ccd6f6;
+  --green: #64ffda;
+  --green-bright: #64ffda;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--navy);
+  color: var(--slate);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.bg-navy-light {
+  background-color: var(--navy-light);
+}
+
+.text-slate {
+  color: var(--slate);
+}
+
+.text-slate-light {
+  color: var(--slate-light);
+}
+
+.text-slate-lightest {
+  color: var(--slate-lightest);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.hover\:text-green:hover {
+  color: var(--green);
+}
+
+.border-green {
+  border-color: var(--green);
+}
+
+.hover\:bg-green\/10:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Add padding to account for fixed header */
+section {
+  padding-top: 70px;
+  margin-top: -70px;
+}
